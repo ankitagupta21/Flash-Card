@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router@2"></script>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4" style="text-align: center">Decks</h1>
+    </div>
+     <div>
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Deck Name</th>
+                <th scope="col">Score</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for deck in decks %}
+              <tr>
+                <td>{{ deck["deck_name"] }}</td>
+                <td>{{ deck["score"] }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+        </table>
+        <form method="Post">
+            <td><button type="submit" class="btn btn-outline-dark" name="Go" value="edit">Edit Decks</button></td>
+            <td><button type="submit" class="btn btn-outline-dark" name="Go" value="view">View Cards</button></td>
+            <td><button type="submit" class="btn btn-outline-dark" name="Go" value="update">Update Decks</button></td>
+            <td><button type="submit" class="btn btn-outline-dark" name="Go" value="export_decks">Export Decks</button></td>
+        </form>
+    </div>
+</body>
+<script type="text/javascript" src="/static/app.js"></script>
+</html>
