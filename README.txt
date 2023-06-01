@@ -16,4 +16,4 @@ User can export CSV file of decks.
 In view cards, user can view all the cards. 
 
 Demo of how it works-
-https://www.linkedin.com/posts/ankita-gupta21_development-project-programming-activity-6871329589256368128-SnKP?utm_source=share&utm_medium=member_desktop
+https://www.linkedin.com/posts/ankitagupta21_development-project-programming-activity-6871329589256368128-6vJD?utm_source=share&utm_medium=member_desktop
