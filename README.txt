@@ -6,7 +6,7 @@ contains app.js
 templates
 contains all the html templates
 
-app.db is the amin database
+app.db is the main database
 
 First user has to sign in or log in.
 After that user has option to add deck or view decks.
